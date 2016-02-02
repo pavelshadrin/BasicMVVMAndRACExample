@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScheduleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcV-Jp-59g">
+                                <rect key="frame" x="48.5" y="16" width="30" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="–"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPC-cS-2pe">
+                                <rect key="frame" x="242.5" y="16" width="30" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 March 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-YH-ZV0">
+                                <rect key="frame" x="90.5" y="28" width="140" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="BN5-eb-0S2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LO5-In-GeX">
+                                <rect key="frame" x="0.0" y="80" width="320" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IHY-YH-ZV0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8et-35-u4N"/>
+                            <constraint firstItem="IHY-YH-ZV0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9z7-Ug-LT4"/>
+                            <constraint firstItem="IHY-YH-ZV0" firstAttribute="leading" secondItem="ZcV-Jp-59g" secondAttribute="trailing" constant="12" id="CMF-qj-jcO"/>
+                            <constraint firstItem="MPC-cS-2pe" firstAttribute="leading" secondItem="IHY-YH-ZV0" secondAttribute="trailing" constant="12" id="CvM-s9-Dgo"/>
+                            <constraint firstItem="IHY-YH-ZV0" firstAttribute="centerY" secondItem="MPC-cS-2pe" secondAttribute="centerY" id="S08-PE-hV1"/>
+                            <constraint firstItem="IHY-YH-ZV0" firstAttribute="centerY" secondItem="ZcV-Jp-59g" secondAttribute="centerY" id="Tnr-a5-Hos"/>
+                            <constraint firstItem="LO5-In-GeX" firstAttribute="top" secondItem="IHY-YH-ZV0" secondAttribute="bottom" constant="31.5" id="Xcb-OE-JQm"/>
+                            <constraint firstItem="LO5-In-GeX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xdq-dx-fZN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LO5-In-GeX" secondAttribute="bottom" id="b59-aB-mRQ"/>
+                            <constraint firstAttribute="trailing" secondItem="LO5-In-GeX" secondAttribute="trailing" id="fIt-al-r1d"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="IHY-YH-ZV0" id="Dux-Yz-dhT"/>
+                        <outlet property="minusButton" destination="ZcV-Jp-59g" id="mk0-Ve-TH3"/>
+                        <outlet property="plusButton" destination="MPC-cS-2pe" id="NCb-5j-iFl"/>
+                        <outlet property="scoresTableView" destination="LO5-In-GeX" id="g5W-Zi-h1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="358"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="ScoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="LA Lakers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-Mt-ThG">
+                        <rect key="frame" x="16" y="8" width="75.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0Z-fV-TLd">
+                        <rect key="frame" x="229" y="8" width="21" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="114" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-ad-pCe">
+                        <rect key="frame" x="224" y="35" width="26" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="GS Warriors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-vL-t4f">
+                        <rect key="frame" x="16" y="35" width="92" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A0Z-fV-TLd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ujs-Mt-ThG" secondAttribute="trailing" constant="10" id="7k0-Dl-1e8"/>
+                    <constraint firstItem="gNn-vL-t4f" firstAttribute="top" secondItem="ujs-Mt-ThG" secondAttribute="bottom" constant="7" id="CRj-xm-09D"/>
+                    <constraint firstItem="A0Z-fV-TLd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="INf-mT-Dbj"/>
+                    <constraint firstItem="tUt-ad-pCe" firstAttribute="top" secondItem="A0Z-fV-TLd" secondAttribute="bottom" constant="7" id="In9-rI-gd2"/>
+                    <constraint firstItem="A0Z-fV-TLd" firstAttribute="trailing" secondItem="tUt-ad-pCe" secondAttribute="trailing" id="JRk-JR-Vfe"/>
+                    <constraint firstItem="ujs-Mt-ThG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jwg-Om-2Jv"/>
+                    <constraint firstAttribute="trailing" secondItem="A0Z-fV-TLd" secondAttribute="trailing" constant="12" id="eA8-I2-Qd8"/>
+                    <constraint firstItem="ujs-Mt-ThG" firstAttribute="leading" secondItem="gNn-vL-t4f" secondAttribute="leading" id="f1G-rx-eAs"/>
+                    <constraint firstItem="tUt-ad-pCe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gNn-vL-t4f" secondAttribute="trailing" constant="10" id="tKO-9x-EOw"/>
+                    <constraint firstItem="ujs-Mt-ThG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xE1-kY-Kp2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstScoreLabel" destination="A0Z-fV-TLd" id="1qy-Cj-JHX"/>
+                <outlet property="firstTeamLabel" destination="ujs-Mt-ThG" id="reB-aJ-8AR"/>
+                <outlet property="secondScoreLabel" destination="tUt-ad-pCe" id="17I-1Q-rWw"/>
+                <outlet property="secondTeamLabel" destination="gNn-vL-t4f" id="9yQ-iJ-1F1"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="282"/>
+        </tableViewCell>
+    </objects>
+</document>
